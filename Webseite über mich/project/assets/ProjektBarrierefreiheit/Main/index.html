@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wie wird eine barrierefreie Webseite erstellt und welche Barrieren müssen bei der Erstellung beseitigt werden?</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!-- Link zu den BoxIcons -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+<!-- Sidebar/ Navigationsleiste -->
+<aside>
+    <nav id="sidebar" aria-label="sidebarContainer">
+        <div class="top">
+            <div class="logo">
+                <span>Inhalt</span>
+            </div>
+            <i class="bx bx-menu" id="openSide" aria-label="button"></i>
+        </div>
+        <ul id="links">
+            <li>
+                <a href="#" data-page="Grundlagen/barrierefreiheit" aria-label="Grundlagen der Barrierefreiheit">
+                    <i class='bx bx-handicap'></i>
+                    <span class="navItem">Grundlagen der Barrierefreiheit</span>
+                </a>
+                <span class="tooltip" aria-hidden="true">Grundlagen</span>
+            </li>
+            <li>
+                <a href="#" data-page="WCAG/WCAG" aria-label="WCAG">
+                    <i class='bx bx-book-open'></i>
+                    <span class="navItem">WCAG 2.2</span>
+                </a>
+                <span class="tooltip" aria-hidden="true">WCAG 2.2</span>
+            </li>
+            <li>
+                <a href="#" data-page="TechnischeUmsetzung/technisch" aria-label="technische Umsetzung">
+                    <i class='bx bx-desktop'></i>
+                    <span class="navItem">Technische Umsetzung</span>
+                </a>
+                <span class="tooltip" aria-hidden="true">Umsetzung</span>
+            </li>
+            <li>
+                <a href="#" data-page="Fallstudien/fallstudien" aria-label="Web 2.0/ barrierefrei">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="navItem">Web 2.0/ barrierefrei</span>
+                </a>
+                <span class="tooltip" aria-hidden="true">Web 2.0/ barrierefrei</span>
+            </li>
+            <li>
+                <a href="#" data-page="Fazit/fazit" aria-label="Fazit">
+                    <i class='bx bxs-edit-alt'></i>
+                    <span class="navItem">Fazit</span>
+                </a>
+                <span class="tooltip" aria-hidden="true">Fazit</span>
+            </li>
+            <li>
+                <a href="#" data-page="Literatur/literatur" aria-label="Literatur">
+                    <i class='bx bxs-book'></i>
+                    <span class="navItem">Literatur</span>
+                </a>
+                <span class="tooltip" aria-hidden="true">Literatur</span>
+            </li>
+            <li>
+                <a href="#" data-page="Startseite/startseite" aria-label="Startseite">
+                    <i class='bx bx-exit'></i>
+                    <span class="navItem">Startseite</span>
+                </a>
+                <span class="tooltip" aria-hidden="true">Startseite</span>
+            </li>
+        </ul>
+        
+    </nav> 
+</aside><!-- Sidebar -->
+
+<!--  Section für das hineingezogenen HTML Dokument bzw. <article> Element -->
+<section id="sidebarContainer" aria-live="polite"></section>
+
+<!-- Schalten zu Dark-Mode und umgekehrt-->
+<button id="modeToggleButton" aria-label="Modus Light-& Dark-Mode">
+    <i class='bx bx-moon'></i>
+</button>
+
+<!-- Schalten von Schriftgröße mit + und (-)-->
+<div id="fontSizeSliderContainer">
+    <input type="range" id="fontSizeSlider" min="10" max="30" value="16" aria-label="Schriftgröße anpassen">
+</div>
+
+<noscript>
+    <div class="essay">
+        <p>JavaScript ist deaktiviert. Bitte aktivieren Sie JavaScript, um die volle Funktionalität dieser Seite zu nutzen.</p>
+    </div>
+</noscript>
+
+<script src="script.js"></script>
+
+  
+</body>
+</html>
